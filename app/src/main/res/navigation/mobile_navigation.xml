@@ -22,4 +22,19 @@
         android:name="com.mammoth.whymedia.ui.slideshow.SlideshowFragment"
         android:label="@string/menu_slideshow"
         tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/nav_ebook"
+        android:name="com.mammoth.whymedia.ui.book.BookFragment"
+        android:label="BookFragment"
+        tools:layout="@layout/fragment_book"/>
+    <fragment
+        android:id="@+id/nav_audio"
+        android:name="com.mammoth.whymedia.ui.audio.AudioFragment"
+        android:label="AudioFragment"
+        tools:layout="@layout/fragment_audio"/>
+    <fragment
+        android:id="@+id/nav_video"
+        android:name="com.mammoth.whymedia.ui.video.VideoFragment"
+        android:label="VideoFragment"
+        tools:layout="@layout/fragment_video"/>
 </navigation>
