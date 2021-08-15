@@ -14,5 +14,9 @@
     <string name="menu_audio">Audio</string>
     <string name="menu_video">Video</string>
     <string name="menu_ebook">Books</string>
+    <string name="add">add</string>
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">毒蘑菇屋</string>
 
 </resources>
