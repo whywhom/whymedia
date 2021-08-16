@@ -4,6 +4,7 @@ import android.animation.AnimatorSet
 import android.animation.ObjectAnimator
 import androidx.appcompat.app.AppCompatActivity
 import android.annotation.SuppressLint
+import android.content.Intent
 import android.graphics.Path
 import android.os.Build
 import android.os.Bundle
@@ -17,6 +18,7 @@ import android.widget.LinearLayout
 import android.widget.TextView
 import android.window.SplashScreenView
 import androidx.activity.viewModels
+import androidx.annotation.MainThread
 import androidx.annotation.RequiresApi
 import androidx.core.animation.doOnEnd
 import androidx.core.os.BuildCompat
@@ -27,6 +29,7 @@ import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.google.android.material.navigation.NavigationView
+import com.mammoth.whymedia.MainActivity
 import com.mammoth.whymedia.databinding.ActivityMainBinding
 import com.mammoth.whymedia.databinding.ActivitySplashBinding
 
@@ -38,14 +41,24 @@ class SplashActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivitySplashBinding
     private val viewModel: SplashViewModel by viewModels()
-    @RequiresApi(31)
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
         binding = ActivitySplashBinding.inflate(layoutInflater)
         setContentView(binding.root)
         hideSystemUI()
-        installSplashScreen()
+        if (Build.VERSION.SDK_INT > 30) {
+            installSplashScreen()
+        }
+        viewModel.isReady.observe(this){
+            if(it){
+                val intent = Intent(this@SplashActivity, MainActivity::class.java)
+                    startActivity(intent)
+                    this@SplashActivity.finish()
+            }
+        }
+        viewModel.isDataReady()
     }
 
     private fun hideSystemUI() {
@@ -76,10 +89,5 @@ class SplashActivity : AppCompatActivity() {
          */
         private const val AUTO_HIDE_DELAY_MILLIS = 3000
 
-        /**
-         * Some older devices needs a small delay between UI widget updates
-         * and a change of the status and navigation bar.
-         */
-        private const val UI_ANIMATION_DELAY = 300
     }
 }

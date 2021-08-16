@@ -7,19 +7,36 @@
         <entry key="app/src/main/res/drawable/ic_cover_default_book.xml" value="0.19635416666666666" />
         <entry key="app/src/main/res/drawable/ic_icon_movie.xml" value="0.21041666666666667" />
         <entry key="app/src/main/res/drawable/ic_kotlin_hero_new_animated_total.xml" value="0.3729166666666667" />
+        <entry key="app/src/main/res/drawable/ic_outline_wb_sunny_24.xml" value="0.20572916666666666" />
         <entry key="app/src/main/res/drawable/ic_splash_xiaomi.xml" value="0.19635416666666666" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.1890625" />
+        <entry key="app/src/main/res/layout/activity_reader.xml" value="0.18958333333333333" />
         <entry key="app/src/main/res/layout/activity_splash.xml" value="0.1796875" />
         <entry key="app/src/main/res/layout/app_bar_main.xml" value="0.1828125" />
         <entry key="app/src/main/res/layout/book_item.xml" value="0.18125" />
         <entry key="app/src/main/res/layout/content_main.xml" value="0.19479166666666667" />
         <entry key="app/src/main/res/layout/fragment_audio.xml" value="0.1828125" />
+        <entry key="app/src/main/res/layout/fragment_audiobook.xml" value="0.18958333333333333" />
         <entry key="app/src/main/res/layout/fragment_book.xml" value="0.1828125" />
+        <entry key="app/src/main/res/layout/fragment_bookshelf.xml" value="0.18958333333333333" />
+        <entry key="app/src/main/res/layout/fragment_drm_management.xml" value="0.18958333333333333" />
         <entry key="app/src/main/res/layout/fragment_gallery.xml" value="0.1828125" />
+        <entry key="app/src/main/res/layout/fragment_listview.xml" value="0.18958333333333333" />
+        <entry key="app/src/main/res/layout/fragment_outline.xml" value="0.18958333333333333" />
+        <entry key="app/src/main/res/layout/fragment_reader.xml" value="0.18958333333333333" />
+        <entry key="app/src/main/res/layout/fragment_screen_reader.xml" value="0.18958333333333333" />
+        <entry key="app/src/main/res/layout/fragment_search.xml" value="0.18958333333333333" />
         <entry key="app/src/main/res/layout/fragment_video.xml" value="0.1828125" />
+        <entry key="app/src/main/res/layout/item_recycle_book.xml" value="0.18958333333333333" />
+        <entry key="app/src/main/res/layout/item_recycle_catalog_list.xml" value="0.18958333333333333" />
+        <entry key="app/src/main/res/layout/popup_note.xml" value="0.18958333333333333" />
+        <entry key="app/src/main/res/layout/popup_window_user_settings.xml" value="0.18958333333333333" />
+        <entry key="app/src/main/res/layout/section_header.xml" value="0.18958333333333333" />
+        <entry key="app/src/main/res/layout/view_action_mode.xml" value="0.18958333333333333" />
         <entry key="app/src/main/res/menu/activity_main_drawer.xml" value="0.1828125" />
         <entry key="app/src/main/res/menu/bottom_navigation_menu.xml" value="0.1828125" />
         <entry key="app/src/main/res/menu/bottomnavigation_menu.xml" value="0.1828125" />
+        <entry key="app/src/main/res/menu/menu_action_mode.xml" value="0.18958333333333333" />
         <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.19635416666666666" />
         <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.19635416666666666" />
       </map>
